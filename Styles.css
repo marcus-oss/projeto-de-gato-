@@ -1,0 +1,160 @@
+:root {
+  --roxo: #6a0dad;
+  --lilas: #c77dff;
+  --roxo-escuro: #2b0a3d;
+  --branco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--roxo-escuro), var(--roxo));
+  color: var(--branco);
+  line-height: 1.6;
+}
+
+/*  Layout  */
+header,
+footer {
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
+
+/*  Classes Reutilizáveis  */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 20px rgba(199, 125, 255, 0.15);
+}
+
+.like-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.like-btn {
+  background: linear-gradient(45deg, #6a0dad, #c77dff);
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.like-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #c77dff;
+}
+
+.like-count {
+  font-size: 14px;
+  color: #fff;
+}
+
+.title {
+  color: var(--lilas);
+  margin-bottom: 10px;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(199, 125, 255, 0.6);
+}
+
+.btn {
+  background: linear-gradient(45deg, #6a0dad, #c77dff);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #c77dff;
+}
+
+/*  Menu  */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--lilas);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px var(--lilas);
+}
+
+/*  Lista de Gatos  */
+.cat-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cat-item {
+  text-align: center;
+}
+
+/*  Tabela e Form  */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--lilas);
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
