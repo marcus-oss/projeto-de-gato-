@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<!-- Configurações do html -->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Gato Meme 😸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="..//public/gato-icon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Parte visual do site -->
+
+<body>
+  <!-- Parte superior do site -->
+  <header>
+    <h1 class="title">Gato Meme 😸</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#sobre">Sobre</a>
+        </li>
+        <li>
+          <a href="#conteudo">Memes</a>
+        </li>
+        <li>
+          <a href="#contato">Enviar Meme</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- parte principal da página -->
+  <main>
+    <section class="card">
+      <h4 class="title">Tipos de Gatos Dev</h4>
+      <ul id="lista-gatos"></ul>
+    </section>
+
+    <section id="sobre" class="card">
+      <h2 class="title">Sobre</h2>
+      <p>Uma coleção de memes de gatos que representam a vida do programador.</p>
+    </section>
+
+    <section id="conteudo" class="card">
+      <h2 class="title">Memes em Destaque</h2>
+
+      <article class="card">
+        <h3 class="title">Gato Like</h3>
+        <img class="image" src="../assets/gato-like.jpg" />
+        <p>Likes: <span id="likes">0</span></p>
+
+        <button class="btn" id="btn-like">Dar Like</button>
+        <button class="btn" id="btn-nivel">Ver meu nível Dev</button>
+      </article>
+
+      <article class="card">
+        <h3 class="title">Tipos de Gatos Programadores</h3>
+
+        <div class="cat-list">
+          <div class="cat-item">
+            <h4 class="title">Quebra projeto em produção</h4>
+            <img class="image" src="../assets/gato-desespero.jpg" />
+          </div>
+
+          <div class="cat-item">
+            <h4 class="title">Dorme no teclado</h4>
+            <img class="image" src="../assets/gato-dormindo.jpg" />
+          </div>
+
+          <div class="cat-item">
+            <h4 class="title">Apaga o código sem querer</h4>
+            <img class="image" src="../assets/gato-triste.jpg" />
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3 class="title">Tabela de Emoções</h3>
+        <table>
+          <tr>
+            <th>Emoji</th>
+            <th>Significado</th>
+          </tr>
+          <tr>
+            <td>😾</td>
+            <td>Bug em produção</td>
+          </tr>
+          <tr>
+            <td>😸</td>
+            <td>Deploy funcionando</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <section class="card">
+      <h3 class="title">Dica do Gato Sênior</h3>
+      <p>“Se funcionou de primeira, desconfie.”</p>
+    </section>
+
+    <section id="contato" class="card">
+      <h2 class="title">Envie seu Meme</h2>
+      <form>
+        <input placeholder="Seu nome" />
+        <input placeholder="Seu email" />
+        <textarea placeholder="Descrição"></textarea>
+        <button class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Roda pé do site -->
+  <footer>
+    <p>© 2026 - Gatos Dev 🐾</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
