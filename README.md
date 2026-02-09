@@ -31,17 +31,6 @@ Copiar código
  ┣ 📜 script.js
  ┗ 📜 README.md
 
-▶️ Como Executar o Projeto
-Clone este repositório:
-Bash
-Copiar código
-git clone https://github.com/seu-usuario/dev- web-gato.git
-
-Acesse a pasta do projeto:
-Bash
-Copiar código
-cd dev-web-gato
-Abra o arquivo index.html no navegador de sua preferência.
 
 🎯 Objetivos do Projeto
 Consolidar conhecimentos básicos de front-end
